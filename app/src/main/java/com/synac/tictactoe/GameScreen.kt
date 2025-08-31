@@ -8,7 +8,14 @@ import androidx.compose.animation.scaleIn
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.aspectRatio
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -37,6 +44,7 @@ fun GameScreen(
 ) {
 
     val state = viewModel.state
+    val boardItems = viewModel.boardItems
 
     Column(
         modifier = Modifier
@@ -81,7 +89,7 @@ fun GameScreen(
                     .aspectRatio(1f),
                 columns = GridCells.Fixed(3)
             ) {
-                viewModel.boardItems.forEach { (cellNo, boardCellValue) ->
+                boardItems.forEach { (cellNo, boardCellValue) ->
                     item {
                         Column(
                             modifier = Modifier
@@ -99,7 +107,7 @@ fun GameScreen(
                             verticalArrangement = Arrangement.Center
                         ) {
                             AnimatedVisibility(
-                                visible = viewModel.boardItems[cellNo] != BoardCellValue.NONE,
+                                visible = boardItems[cellNo] != BoardCellValue.NONE,
                                 enter = scaleIn(tween(1000))
                             ) {
                                 if (boardCellValue == BoardCellValue.CIRLCE) {
