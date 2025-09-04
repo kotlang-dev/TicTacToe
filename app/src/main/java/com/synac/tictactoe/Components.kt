@@ -11,6 +11,8 @@ import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.synac.tictactoe.ui.theme.Aqua
+import com.synac.tictactoe.ui.theme.GreenishYellow
 
 @Composable
 fun BoardBase() {
@@ -58,7 +60,7 @@ fun Circle() {
             .padding(5.dp)
     ) {
         drawCircle(
-            color = Color.Blue,
+            color = Aqua,
             style = Stroke(width = 20f)
         )
     }
@@ -72,14 +74,14 @@ fun Cross() {
             .padding(5.dp)
     ) {
         drawLine(
-            color = Color.Red,
+            color = GreenishYellow,
             strokeWidth = 20f,
             cap = StrokeCap.Round,
             start = Offset(x = 0f, y = 0f),
             end = Offset(x = size.width, y = size.height)
         )
         drawLine(
-            color = Color.Red,
+            color = GreenishYellow,
             strokeWidth = 20f,
             cap = StrokeCap.Round,
             start = Offset(x = 0f, y = size.height),
