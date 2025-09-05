@@ -97,8 +97,8 @@ fun WinVerticalLine1() {
             color = Color.Red,
             strokeWidth = 10f,
             cap = StrokeCap.Round,
-            start = Offset(x = size.width*1/6, y = 0f),
-            end = Offset(x = size.width*1/6, y = size.height)
+            start = Offset(x = size.width * 1 / 6, y = 0f),
+            end = Offset(x = size.width * 1 / 6, y = size.height)
         )
     }
 }
@@ -110,8 +110,8 @@ fun WinVerticalLine2() {
             color = Color.Red,
             strokeWidth = 10f,
             cap = StrokeCap.Round,
-            start = Offset(x = size.width*3/6, y = 0f),
-            end = Offset(x = size.width*3/6, y = size.height)
+            start = Offset(x = size.width * 3 / 6, y = 0f),
+            end = Offset(x = size.width * 3 / 6, y = size.height)
         )
     }
 }
@@ -123,8 +123,8 @@ fun WinVerticalLine3() {
             color = Color.Red,
             strokeWidth = 10f,
             cap = StrokeCap.Round,
-            start = Offset(x = size.width*5/6, y = 0f),
-            end = Offset(x = size.width*5/6, y = size.height)
+            start = Offset(x = size.width * 5 / 6, y = 0f),
+            end = Offset(x = size.width * 5 / 6, y = size.height)
         )
     }
 }
@@ -136,8 +136,8 @@ fun WinHorizontalLine1() {
             color = Color.Red,
             strokeWidth = 10f,
             cap = StrokeCap.Round,
-            start = Offset(x = 0f, y = size.height*1/6),
-            end = Offset(x = size.width, y = size.height*1/6)
+            start = Offset(x = 0f, y = size.height * 1 / 6),
+            end = Offset(x = size.width, y = size.height * 1 / 6)
         )
     }
 }
@@ -149,8 +149,8 @@ fun WinHorizontalLine2() {
             color = Color.Red,
             strokeWidth = 10f,
             cap = StrokeCap.Round,
-            start = Offset(x = 0f, y = size.height*3/6),
-            end = Offset(x = size.width, y = size.height*3/6)
+            start = Offset(x = 0f, y = size.height * 3 / 6),
+            end = Offset(x = size.width, y = size.height * 3 / 6)
         )
     }
 }
@@ -162,8 +162,8 @@ fun WinHorizontalLine3() {
             color = Color.Red,
             strokeWidth = 10f,
             cap = StrokeCap.Round,
-            start = Offset(x = 0f, y = size.height*5/6),
-            end = Offset(x = size.width, y = size.height*5/6)
+            start = Offset(x = 0f, y = size.height * 5 / 6),
+            end = Offset(x = size.width, y = size.height * 5 / 6)
         )
     }
 }
